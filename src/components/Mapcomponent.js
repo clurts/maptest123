@@ -9,7 +9,7 @@ const Mapcomponent = () => {
     const [mapLat, setMapLat] = useState(null);
     const [mapZoom, setMapZoom] = useState(null);
 
-    mapboxgl.accessToken = 'pk.eyJ1IjoiY2x1cnRzIiwiYSI6ImNrY2Q0c2ZvYzBiNG4yc3A5anp1a3BuZG4ifQ.v_p94R2H61ySCiE_kRYNaA'
+    mapboxgl.accessToken = 'pk.eyJ1IjoiY2x1cnRzIiwiYSI6ImNrbGRxZmR4dTExZnYydXM0cms3d2c4d2sifQ.yMw8k9ubWM_YBv0DJw5bqw'
 
     useEffect(() => {
         setMapLng(12.58655283549853)
