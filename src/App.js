@@ -1,5 +1,9 @@
 import logo from './logo.svg';
 import './App.css';
+import Users from './components/Users';
+import NewUser from './components/NewUser';
+import LoginModal from './components/LoginModal';
+import Mapcomponent from './components/Mapcomponent';
 
 function App() {
   return (
@@ -18,6 +22,10 @@ function App() {
           Learn React
         </a>
       </header>
+      <Mapcomponent />
+      <NewUser />
+      <Users />
+      <LoginModal />
     </div>
   );
 }
