@@ -8,10 +8,10 @@ const Mapcomponent = () => {
     const [mapLng, setMapLng] = useState(null);
     const [mapLat, setMapLat] = useState(null);
     const [mapZoom, setMapZoom] = useState(null);
-    const styleUrl = `mapbox://styles/clurts/ckchfn96u218w1iphn1m6u1fc`;
+    const styleUrl = "mapbox://styles/clurts/ckchfn96u218w1iphn1m6u1fc";
 
     const Map = ReactMapboxGl({
-        accessToken: 'pk.eyJ1IjoiY2x1cnRzIiwiYSI6ImNrbGRxZmR4dTExZnYydXM0cms3d2c4d2sifQ.yMw8k9ubWM_YBv0DJw5bqw'
+        accessToken: process.env.REACT_APP_MAPBOX_TOKEN
     });
 
     useEffect(() => {
