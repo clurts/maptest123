@@ -8,7 +8,7 @@ const Mapcomponent = () => {
     const [mapLng, setMapLng] = useState(null);
     const [mapLat, setMapLat] = useState(null);
     const [mapZoom, setMapZoom] = useState(null);
-    const styleUrl = "mapbox://styles/clurts/ckchfn96u218w1iphn1m6u1fc";
+    const styleUrl = {"mapbox://styles/clurts/ckchfn96u218w1iphn1m6u1fc"}
 
     const Map = ReactMapboxGl({
         accessToken: process.env.REACT_APP_MAPBOX_TOKEN
