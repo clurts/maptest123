@@ -1,5 +1,3 @@
-/** @jsxImportSource @emotion/react */
-import { css } from "@emotion/react"
 
 import ReactMapboxGl from "react-mapbox-gl";
 import { useState, useEffect } from 'react';
@@ -19,10 +17,6 @@ const Mapcomponent = () => {
         setMapZoom(15)
     }, []);
     
-    const style = css`
-        height: 50vh
-    `;
- 
         
     return ( 
         <Map 
