@@ -1,5 +1,5 @@
 import ReactMapGL, { GeolocateControl } from "react-map-gl";
-import { useState, useEffect } from 'react';
+import { useState } from 'react';
 
 const Mapcomponent = () => {
    
