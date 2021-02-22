@@ -21,7 +21,7 @@ const Mapcomponent = () => {
         
     return ( 
         <Map 
-            style="mapbox://styles/clurts/ckchfn96u218w1iphn1m6u1fc"
+            style={"mapbox://styles/clurts/ckchfn96u218w1iphn1m6u1fc"}
             containerStyle={{
                 height: '50vh',
                 width: '100vw'
