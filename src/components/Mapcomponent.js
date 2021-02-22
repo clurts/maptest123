@@ -28,7 +28,7 @@ const Mapcomponent = () => {
     return ( 
         <Map 
         css={style}
-        style={{styleUrl}}
+        style={styleUrl}
         center={[mapLng, mapLat]}
         zoom={[mapZoom]}
         />
