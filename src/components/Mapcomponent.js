@@ -27,7 +27,7 @@ const Mapcomponent = () => {
     return ( 
         <Map 
         css={style}
-        style={{mapbox://styles/clurts/ckchfn96u218w1iphn1m6u1fc}}
+        style="mapbox://styles/clurts/ckchfn96u218w1iphn1m6u1fc"
         center={[mapLng, mapLat]}
         zoom={[mapZoom]}
         />
