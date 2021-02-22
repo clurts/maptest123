@@ -20,7 +20,7 @@ const Mapcomponent = () => {
         <ReactMapGL 
             {...viewport}
             mapboxApiAccessToken={process.env.REACT_APP_MAPBOX_ACCESS_TOKEN}
-            mapStyle="	mapbox://styles/mapbox/streets-v11"
+            mapStyle="mapbox://styles/mapbox/streets-v11"
             onViewportChange={setViewport}
         >
            <GeolocateControl
