@@ -1,4 +1,3 @@
-
 import ReactMapboxGl from "react-mapbox-gl";
 import { useState, useEffect } from 'react';
 
@@ -16,17 +15,17 @@ const Mapcomponent = () => {
         setMapLat(55.70512146030345)
         setMapZoom(15)
     }, []);
+
+    console.log(mapLng,mapLat,mapZoom)
     
         
     return ( 
         <Map 
-        style="mapbox://styles/clurts/ckchfn96u218w1iphn1m6u1fc"
-        containerStyle={{
-            height: '50vh',
-            width: '100vw'
-        }}
-        center={[mapLng, mapLat]}
-        zoom={[mapZoom]}
+            style="mapbox://styles/clurts/ckchfn96u218w1iphn1m6u1fc"
+            containerStyle={{
+                height: '50vh',
+                width: '100vw'
+            }}
         />
      );
 }
