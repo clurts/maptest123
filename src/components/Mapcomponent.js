@@ -1,4 +1,4 @@
-import ReactMapGL, { GeolocateControl } from "react-map-gl";
+import ReactMapGL, { GeolocateControl, NavigationControl } from "react-map-gl";
 import mapboxgl from "mapbox-gl";
 import { useState } from 'react';
 
@@ -16,10 +16,13 @@ const Mapcomponent = () => {
         height: "50vh"
     });
     const geolocateControlStyle= {
-        right: 10,
-        top: 10
+        right: 20,
+        top: 20
       }; 
-    
+      const navigaationControlStyle= {
+        right: 20,
+        top: 60
+      };
          
     return ( 
         <ReactMapGL 
@@ -28,6 +31,7 @@ const Mapcomponent = () => {
             mapStyle="mapbox://styles/clurts/ckchfn96u218w1iphn1m6u1fc"
             onViewportChange={setViewport}
         >
+            <NavigationControl style={navigaationControlStyle}/>
            <GeolocateControl
         style={geolocateControlStyle}
         positionOptions={{enableHighAccuracy: true}}
