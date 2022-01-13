@@ -1,16 +1,12 @@
 import ReactMapGL, { GeolocateControl, NavigationControl } from "react-map-gl";
-import mapboxgl from "mapbox-gl";
 import { useState } from 'react';
-
-// eslint-disable-next-line import/no-webpack-loader-syntax
-mapboxgl.workerClass = require("worker-loader!mapbox-gl/dist/mapbox-gl-csp-worker").default;
 
 
 const Mapcomponent = () => {
    
     const [viewport, setViewport] = useState({
-        latitude: 55.70512146030345,
-        longitude: 12.58655283549853,
+        latitude: 55.7051,
+        longitude: 12.5865,
         zoom: 15,
         width: "100vw",
         height: "50vh"
@@ -19,7 +15,7 @@ const Mapcomponent = () => {
         right: 20,
         top: 20
       }; 
-      const navigaationControlStyle= {
+      const navigationControlStyle= {
         right: 20,
         top: 60
       };
@@ -28,17 +24,18 @@ const Mapcomponent = () => {
         <ReactMapGL 
             {...viewport}
             mapboxApiAccessToken={process.env.REACT_APP_MAPBOX_ACCESS_TOKEN}
-            mapStyle="mapbox://styles/clurts/ckchfn96u218w1iphn1m6u1fc"
+            mapStyle="mapbox://styles/mapbox/dark-v10"
             onViewportChange={setViewport}
         >
-            <NavigationControl style={navigaationControlStyle}/>
-           <GeolocateControl
-        style={geolocateControlStyle}
-        positionOptions={{enableHighAccuracy: true}}
-        trackUserLocation={true}
-        showAccuracyCircle={true}
-        auto
+        <NavigationControl style={navigationControlStyle}/>
+        <GeolocateControl
+          style={geolocateControlStyle}
+          positionOptions={{enableHighAccuracy: true}}
+          trackUserLocation={true}
+          showAccuracyCircle={true}
+          auto
         /> 
+
         </ReactMapGL>
      );
 }

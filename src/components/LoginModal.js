@@ -8,7 +8,7 @@ Modal.setAppElement('#root')
 
 const LoginModal = () => {
     const { register, handleSubmit, errors } = useForm();
-    const [isOpen, setIsOpen] = useState(false);
+    const [isOpen, setIsOpen] = useState(true);
 
     const onSubmit = data => {
       console.log(data)
